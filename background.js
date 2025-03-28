@@ -1,5 +1,7 @@
 chrome.action.onClicked.addListener(function (tab) {
-  const pinboardUrl = `https://pinboard.in/add?next=close&url=${encodeURIComponent(tab.url)}&title=${encodeURIComponent(tab.title)}&description=${encodeURIComponent(tab.title)}`;
+  const closeUrl = chrome.runtime.getURL("close.html");
+
+  const pinboardUrl = `https://pinboard.in/add?next=${encodeURIComponent(closeUrl)}&url=${encodeURIComponent(tab.url)}&title=${encodeURIComponent(tab.title)}&description=${encodeURIComponent(tab.title)}`;
 
   chrome.windows.create({
     url: pinboardUrl,

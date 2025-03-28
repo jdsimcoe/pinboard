@@ -19,5 +19,11 @@
   "permissions": ["tabs", "scripting", "windows"],
   "host_permissions": ["http://*/*", "https://*/*"],
   "short_name": "Pinboard",
-  "version": "1.0"
+  "version": "1.0",
+  "web_accessible_resources": [
+    {
+      "resources": ["close.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
