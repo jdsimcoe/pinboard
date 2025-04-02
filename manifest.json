@@ -16,7 +16,7 @@
   },
   "manifest_version": 3,
   "name": "Pinboard",
-  "permissions": ["tabs", "scripting", "windows"],
+  "permissions": ["tabs", "windows"],
   "host_permissions": ["http://*/*", "https://*/*"],
   "short_name": "Pinboard",
   "version": "1.0",
