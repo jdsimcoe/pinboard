@@ -6,8 +6,8 @@ chrome.action.onClicked.addListener(function (tab) {
   chrome.windows.create({
     url: pinboardUrl,
     type: "popup",
-    width: 600,
-    height: 550,
+    width: 800,
+    height: 400,
     focused: true,
   });
 });
