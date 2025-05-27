@@ -16,10 +16,19 @@
   },
   "manifest_version": 3,
   "name": "Pinboard",
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+S",
+        "mac": "MacCtrl+S"
+      },
+      "description": "Save current page to Pinboard"
+    }
+  },
   "permissions": ["tabs", "windows"],
   "host_permissions": ["http://*/*", "https://*/*"],
   "short_name": "Pinboard",
-  "version": "1.1",
+  "version": "1.2",
   "web_accessible_resources": [
     {
       "resources": ["close.html"],
